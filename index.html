@@ -16,7 +16,7 @@
 <div id="app1">
    <button v-on:click="increase(2)"> click me</button>
     <p>{{ counter }}</p>
-    <p v-on:mousemove="updateCoordinate">Coordinates : {{ x }} {{y}}</p>
+    <p v-on:mousemove="updateCoordinate">Coordinates : {{ x }} {{y}} - <span v-on:mousemove.stop>DEAD SPOT</span></p>
 </div>
 <script src="vue.js" type="application/javascript"></script>
 <script src="vue.app.js" type="application/javascript"></script>
