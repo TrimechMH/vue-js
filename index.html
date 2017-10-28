@@ -15,7 +15,8 @@
         <hr>
         <div id="app1">
             <button v-on:click="increase(2)"> click me</button>
-            <p>{{ counter }}</p>
+            <button v-on:click="counter++">click me</button>
+            <p>{{ counter *2 > 10 ? 'Grater than 10' : 'Smaller than 10' }}</p>
             <p v-on:mousemove="updateCoordinate">Coordinates : {{ x }} {{y}} - <span v-on:mousemove.stop>DEAD SPOT</span></p>
             <input type="text" @keyup.enter.space.f2="alertMe">
         </div>
