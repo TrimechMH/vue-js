@@ -62,11 +62,13 @@ new Vue({
         }
     }
 });
+
 new Vue({
     el: '#app2',
     data: {
         name: 'Max',
-        link: 'http://www.google.com'
+        link: 'http://www.google.com',
+        attachRed : false
     },
     methods: {
         changeLink: function () {

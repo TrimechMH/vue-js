@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>VueJs Training</title>
+    <link rel="stylesheet" href="style.css" type="text/css"></link>
 </head>
     <body>
         <div id="app">
@@ -38,6 +39,10 @@
             <button @click="changeLink">Click to Change Link</button>
             <!--v-bind:href ==> :href-->
             <a :href="link" target="_blank">Link</a>
+            <hr>
+            <div class="demo" @click="attachRed = !attachRed" :class="{red:attachRed}"></div>
+            <div class="demo" :class="{red:attachRed}"></div>
+            <div class="demo"></div>
         </div>
         <script src="vue.js" type="application/javascript"></script>
         <script src="vue.app.js" type="application/javascript"></script>
