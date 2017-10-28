@@ -68,7 +68,8 @@ new Vue({
     data: {
         name: 'Max',
         link: 'http://www.google.com',
-        attachRed : false
+        attachRed : false,
+        color : 'green'
     },
     computed : {
       divClasses : function () {

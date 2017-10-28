@@ -7,8 +7,8 @@
 </head>
     <body>
         <div id="app">
-            <h1>app</h1>
-            <h1 v-once>{{ title }}</h1>
+            <h2>app</h2>
+            <h2 v-once>{{ title }}</h2>
             <input type="text" v-on:input="changeTitle">
             <p>{{ sayHello() }} - <a v-bind:href="link" target="_blank"> Google</a></p>
             <p v-html="finishedLink"></p>
@@ -16,7 +16,7 @@
         </div>
         <hr>
         <div id="app1">
-            <h1>app1</h1>
+            <h2>app1</h2>
             <button v-on:click="increase(2)"> click me</button>
             <button v-on:click="counter++">click me</button>
             <p>{{ counter *2 > 10 ? 'Grater than 10' : 'Smaller than 10' }}</p>
@@ -31,10 +31,9 @@
         </div>
         <hr>
         <div id="app2">
-            <h1>app2</h1>
+            <h2>app2</h2>
             <input type="text" v-model="name">
             <p>{{ name }}</p>
-            <hr>
             <!--v-on:click ==> @click-->
             <button @click="changeLink">Click to Change Link</button>
             <!--v-bind:href ==> :href-->
@@ -42,7 +41,9 @@
             <hr>
             <div class="demo" @click="attachRed = !attachRed" :class="divClasses"></div>
             <div class="demo" :class="{red:attachRed}"></div>
-            <div class="demo"></div>
+            <div class="demo" :class="[color, {red:attachRed}]"></div>
+            <br>
+            <input type="text" v-model="color">
         </div>
         <script src="vue.js" type="application/javascript"></script>
         <script src="vue.app.js" type="application/javascript"></script>
