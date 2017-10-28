@@ -42,6 +42,14 @@ new Vue({
         }
     }
 });
+new Vue({
+    el: '#app2',
+    data: {
+        name : 'Max'
+    },
+    methods: {
+    }
+});
 
 //define new keyCodes
 Vue.config.keyCodes.f2 = 113;
