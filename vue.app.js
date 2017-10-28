@@ -70,6 +70,14 @@ new Vue({
         link: 'http://www.google.com',
         attachRed : false
     },
+    computed : {
+      divClasses : function () {
+          return {
+              red : this.attachRed,
+              blue : !this.attachRed
+          }
+      }
+    },
     methods: {
         changeLink: function () {
             this.link = 'http://www.apple.com'
