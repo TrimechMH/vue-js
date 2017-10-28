@@ -34,7 +34,9 @@
             <input type="text" v-model="name">
             <p>{{ name }}</p>
             <hr>
+            <!--v-on:click ==> @click-->
             <button @click="changeLink">Click to Change Link</button>
+            <!--v-bind:href ==> :href-->
             <a :href="link" target="_blank">Link</a>
         </div>
         <script src="vue.js" type="application/javascript"></script>
