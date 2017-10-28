@@ -22,6 +22,12 @@
             <p>{{ counter *2 > 10 ? 'Grater than 10' : 'Smaller than 10' }}</p>
             <p v-on:mousemove="updateCoordinate">Coordinates : {{ x }} {{y}} - <span v-on:mousemove.stop>DEAD SPOT</span></p>
             <input type="text" @keyup.enter.space.f2="alertMe">
+            <hr>
+            <button v-on:click="counterDI++">Increase</button>
+            <button v-on:click="counterDI--">Decrease</button>
+            <button v-on:click="secondCounter++">Increase second</button>
+            <p>Counter : {{counterDI}} | {{secondCounter}}</p>
+            <P>Result : {{ result() }} | {{ output }}</P>
             <br>
         </div>
         <hr>

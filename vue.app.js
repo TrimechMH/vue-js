@@ -23,8 +23,16 @@ new Vue({
     el: '#app1',
     data: {
        counter : 0,
+       counterDI : 0,
+       secondCounter : 0,
         x :0,
         y : 0
+    },
+    computed: {
+      output: function () {
+          console.log('computed');
+          return this.counterDI > 5 ? 'Greater than5' : 'Smaller than 5'
+      }
     },
     methods: {
         increase: function(step) {
@@ -39,6 +47,10 @@ new Vue({
         },
         alertMe : function () {
             alert('alert! you press enter || space ||F2  ...');
+        },
+        result: function(){
+            console.log('result');
+            return this.counterDI > 5 ? 'Greater than5' : 'Smaller than 5'
         }
     }
 });
