@@ -36,6 +36,12 @@ new Vue({
         },
         dummy: function (event) {
             event.stopPropagation();
+        },
+        alertMe : function () {
+            alert('alert! you press enter || space ||F2  ...');
         }
     }
 });
+
+//define new keyCodes
+Vue.config.keyCodes.f2 = 113;

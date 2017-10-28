@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <title>VueJs Training</title>
 </head>
-<body>
-<div id="app">
-    <h1 v-once>{{ title }}</h1>
-    <input type="text" v-on:input="changeTitle">
-    <p>{{ sayHello() }} - <a v-bind:href="link"> Google</a></p>
-    <hr>
-    <p v-html="finishedLink"></p>
-</div>
-<hr>
-<div id="app1">
-   <button v-on:click="increase(2)"> click me</button>
-    <p>{{ counter }}</p>
-    <p v-on:mousemove="updateCoordinate">Coordinates : {{ x }} {{y}} - <span v-on:mousemove.stop>DEAD SPOT</span></p>
-</div>
-<script src="vue.js" type="application/javascript"></script>
-<script src="vue.app.js" type="application/javascript"></script>
-</body>
+    <body>
+        <div id="app">
+            <h1 v-once>{{ title }}</h1>
+            <input type="text" v-on:input="changeTitle">
+            <p>{{ sayHello() }} - <a v-bind:href="link"> Google</a></p>
+            <hr>
+            <p v-html="finishedLink"></p>
+        </div>
+        <hr>
+        <div id="app1">
+            <button v-on:click="increase(2)"> click me</button>
+            <p>{{ counter }}</p>
+            <p v-on:mousemove="updateCoordinate">Coordinates : {{ x }} {{y}} - <span v-on:mousemove.stop>DEAD SPOT</span></p>
+            <input type="text" @keyup.enter.space.f2="alertMe">
+        </div>
+        <script src="vue.js" type="application/javascript"></script>
+        <script src="vue.app.js" type="application/javascript"></script>
+    </body>
 </html>
