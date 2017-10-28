@@ -9,8 +9,7 @@
             <h1>app</h1>
             <h1 v-once>{{ title }}</h1>
             <input type="text" v-on:input="changeTitle">
-            <p>{{ sayHello() }} - <a v-bind:href="link"> Google</a></p>
-            <hr>
+            <p>{{ sayHello() }} - <a v-bind:href="link" target="_blank"> Google</a></p>
             <p v-html="finishedLink"></p>
             <br>
         </div>
@@ -28,13 +27,15 @@
             <button v-on:click="secondCounter++">Increase second</button>
             <p>Counter : {{counterDI}} | {{secondCounter}}</p>
             <P>Result : {{ result() }} | {{ output }}</P>
-            <br>
         </div>
         <hr>
         <div id="app2">
             <h1>app2</h1>
             <input type="text" v-model="name">
             <p>{{ name }}</p>
+            <hr>
+            <button @click="changeLink">Click to Change Link</button>
+            <a :href="link" target="_blank">Link</a>
         </div>
         <script src="vue.js" type="application/javascript"></script>
         <script src="vue.app.js" type="application/javascript"></script>

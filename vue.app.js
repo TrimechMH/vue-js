@@ -65,9 +65,14 @@ new Vue({
 new Vue({
     el: '#app2',
     data: {
-        name: 'Max'
+        name: 'Max',
+        link: 'http://www.google.com'
     },
-    methods: {}
+    methods: {
+        changeLink: function () {
+            this.link = 'http://www.apple.com'
+        }
+    }
 });
 
 //define new keyCodes
