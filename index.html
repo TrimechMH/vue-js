@@ -42,8 +42,10 @@
             <div class="demo" @click="attachRed = !attachRed" :class="divClasses"></div>
             <div class="demo" :class="{red:attachRed}"></div>
             <div class="demo" :class="[color, {red:attachRed}]"></div>
+            <div class="demo" :style="myStyle"></div>
             <br>
             <input type="text" v-model="color">
+            <input type="text" v-model="width">
         </div>
         <script src="vue.js" type="application/javascript"></script>
         <script src="vue.app.js" type="application/javascript"></script>

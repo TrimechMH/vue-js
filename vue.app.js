@@ -69,13 +69,20 @@ new Vue({
         name: 'Max',
         link: 'http://www.google.com',
         attachRed : false,
-        color : 'green'
+        color : 'green',
+        width : 100
     },
     computed : {
       divClasses : function () {
           return {
               red : this.attachRed,
               blue : !this.attachRed
+          }
+      },
+      myStyle : function () {
+          return{
+              backgroundColor : this.color,
+              width : this.width + 'px'
           }
       }
     },
