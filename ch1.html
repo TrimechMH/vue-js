@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>VueJs Training</title>
+    <link rel="stylesheet" href="style.css" type="text/css"></link>
+</head>
+    <body>
+        <div id="app">
+            <h2>app</h2>
+            <h2 v-once>{{ title }}</h2>
+            <input type="text" v-on:input="changeTitle">
+            <p>{{ sayHello() }} - <a v-bind:href="link" target="_blank"> Google</a></p>
+            <p v-html="finishedLink"></p>
+            <br>
+        </div>
+        <script src="vue.js" type="application/javascript"></script>
+        <script src="ch1.app.js" type="application/javascript"></script>
+    </body>
+</html>

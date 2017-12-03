@@ -6,15 +6,6 @@
     <link rel="stylesheet" href="style.css" type="text/css"></link>
 </head>
     <body>
-        <div id="app">
-            <h2>app</h2>
-            <h2 v-once>{{ title }}</h2>
-            <input type="text" v-on:input="changeTitle">
-            <p>{{ sayHello() }} - <a v-bind:href="link" target="_blank"> Google</a></p>
-            <p v-html="finishedLink"></p>
-            <br>
-        </div>
-        <hr>
         <div id="app1">
             <h2>app1</h2>
             <button v-on:click="increase(2)"> click me</button>
@@ -48,6 +39,6 @@
             <input type="text" v-model="width">
         </div>
         <script src="vue.js" type="application/javascript"></script>
-        <script src="vue.app.js" type="application/javascript"></script>
+        <script src="ch2.app.js" type="application/javascript"></script>
     </body>
 </html>

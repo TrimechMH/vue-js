@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>VueJs Training</title>
+    <link rel="stylesheet" href="style.css" type="text/css"></link>
+</head>
+    <body>
+        <div id="app">
+            <p v-if="show">You can see me! <span>Hello!</span></p>
+            <p v-else>You can see me!</p>
+            <p>Do you also see me?</p>
+            <button @click="show = !show">Switch</button>
+        </div>
+        <script src="vue.js" type="application/javascript"></script>
+        <script src="ch3.app.js" type="application/javascript"></script>
+    </body>
+</html>
