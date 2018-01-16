@@ -21,9 +21,16 @@
                 <li v-for="(ingredient, index) in ingredients">{{ingredient}} ({{index}})</li>
             </ul>
             <template v-for="(ingredient, index) in ingredients">
-                <h1>{{ingredient}}</h1>
+                <h3>{{ingredient}}</h3>
                 <p>{{index}}</p>
             </template>
+            <br>
+            <hr>
+            <ul>
+                <li v-for="person in persons">
+                    <div v-for="(value, key, index) in person">{{key}} : {{value}} ({{index}})</div>
+                </li>
+            </ul>
         </div>
         <script src="vue.js" type="application/javascript"></script>
         <script src="ch3.app.js" type="application/javascript"></script>
