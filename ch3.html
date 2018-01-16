@@ -15,6 +15,11 @@
             </template>
             <p>Do you also see me?</p>
             <button @click="show = !show">Switch</button>
+            <br>
+            <hr>
+            <ul>
+                <li v-for="ingredient in ingredients">{{ingredient}}</li>
+            </ul>
         </div>
         <script src="vue.js" type="application/javascript"></script>
         <script src="ch3.app.js" type="application/javascript"></script>
